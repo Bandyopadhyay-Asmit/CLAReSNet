@@ -8,6 +8,7 @@ The main source of the datasets is https://www.ehu.eus/ccwintco/index.php/Hypers
 
 Citation:
 -----------------
+```bibtex
 @misc{bandyopadhyay2025claresnetconvolutionmeetslatent,
       title={CLAReSNet: When Convolution Meets Latent Attention for Hyperspectral Image Classification}, 
       author={Asmit Bandyopadhyay and Anindita Das Bhattacharjee and Rakesh Das},
