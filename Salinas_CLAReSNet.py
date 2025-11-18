@@ -2075,6 +2075,10 @@ def comprehensive_evaluation(model: nn.Module, loader: DataLoader, device: torch
     
     return detailed_metrics
 
+# =============================================================================
+# MAIN PIPELINE FOR SALINAS DATASET
+# =============================================================================
+
 """
 CLAReSNet Training Pipeline for Salinas Hyperspectral Dataset
 ==============================================================
@@ -2095,10 +2099,6 @@ Input/Output Dimensions Throughout Pipeline:
 4. Training batch: (16, 30, 11, 11) - [batch_size, bands, height, width]
 5. Model output: (16, 16) - [batch_size, n_classes]
 """
-
-# =============================================================================
-# MAIN PIPELINE FOR SALINAS DATASET
-# =============================================================================
 
 if __name__ == "__main__":
     """
