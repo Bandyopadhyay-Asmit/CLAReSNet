@@ -2094,6 +2094,7 @@ Input/Output Dimensions Throughout Pipeline:
 3. After PCA: (512, 217, 30)
 4. Training batch: (16, 30, 11, 11) - [batch_size, bands, height, width]
 5. Model output: (16, 16) - [batch_size, n_classes]
+"""
 
 # =============================================================================
 # MAIN PIPELINE FOR SALINAS DATASET
