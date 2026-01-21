@@ -506,6 +506,7 @@ class EnhancedSEBlock(nn.Module):
         # Global pooling: (B, C, H, W) -> (B, C)
         avg_out = self.avg_pool(x).view(b, c)
         max_out = self.max_pool(x).view(b, c)
+        combined = torch.cat([avg_out, max_out], dim=1)
         weights = self.fc(combined).view(b, c, 1, 1)  # (B, C, 1, 1)
         
         # Apply channel-wise recalibration
